@@ -20,22 +20,21 @@
     <!-- Daisy UI link end -->
     <title>Ttitle</title>
 
+
     
     <script>
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                'btn-primary': '#179800',
-                'bg-primary': 'rgba(231,111,81,0.1)',
-                'text-primary': '#111111'
-              }
+              fontFamily:{
+                        sora: ["Sora", serif],
+                    },
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="font-sora">
     <!-- header section -->
      <header class=" px-3 mx-auto md:max-w-[90%] 2xl:max-w-[1500px]">
         <div class="navbar bg-base-100">
@@ -73,8 +72,8 @@
               <a href="#">
                 <i class="text-xl text-[#111111] mr-5 fa-solid fa-cart-shopping"></i>
             </a>
-              <a class=" px-5 py-1 border-2 border-[#179800] rounded-lg text-lg text-[#111111] mr-5">Login</a>
-              <a class="px-5 py-1 border-2 border-[#179800] rounded-lg text-lg bg-[#179800] text-white">Register</a>
+              <a class=" px-5 py-1 border-2 border-[#179800] rounded-lg text-lg text-[#111111] mr-5 hover:bg-[#179800] hover:text-white tran duration-300">Login</a>
+              <a class="px-5 py-1 border-2 border-[#179800] rounded-lg text-lg bg-[#179800] text-white hover:bg-white hover:text-[#111111] tran duration-300">Register</a>
             </div>
           </div>
      </header>
@@ -88,8 +87,9 @@
 
      <main>
         <!-- banner section -->
-         <div class="bg-gradient-to-b from-white to-[#EFEBE3]">
-          <section class="px-3 mx-auto md:max-w-[90%] 2xl:max-w-[1500px]">
+         <div class=" bg-gradient-to-b from-white to-[#EFEBE3]">
+          
+          <section class="px-3 mx-auto md:max-w-[90%] 2xl:max-w-[1500px]  ">
             <div  class="text-center pt-10 md:pt-24 items-center ">
 
                 <h1 class="text-3xl md:text-6xl font-semibold text-[#111111] ">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
@@ -192,7 +192,7 @@
 
 
        <!-- Popular products-->
-        <section class="px-3 py-24 bg-[#EFEBE3] ">
+        <section class="px-3 pt-24 md:pb-24 bg-[#EFEBE3] ">
             <div class=" mx-auto md:max-w-[90%] 2xl:max-w-[1500px]">
                 <h1 class="text-2xl md:text-4xl text-[#179800] pb-8  font-semibold">Popular Products</h1>
 
@@ -206,7 +206,7 @@
                   <div class="h-[100%] px-8 pt-4 bg-[url('images/vegetable-offer.png')] bg-no-repeat bg-right-bottom bg-[length:60%_auto]">
                     <h2 class="text-white text-4xl font-bold">30% off</h2>
                     <p class="my-5">Discover a world of treats toys and essentials handpicked for</p>
-                    <a href="#" class="px-6 py-2 rounded-lg text-lg bg-white">Buy Now</a>
+                    <a href="#" class="px-6 py-2 rounded-lg text-lg bg-white hover:bg-[#179800] hover:text-white tran duration-300">Buy Now</a>
                   </div>
                     
                 </div>
@@ -343,6 +343,40 @@
 
 
 
+        <!-- faq saction -->
+         <section class="mx-auto md:max-w-[90%] 2xl:max-w-[1500px] py-24 space-y-3">
+          <h1 class="text-2xl md:text-4xl text-[#179800] pb-8  font-semibold">Frequently Asked Question</h1> 
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+         </section>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -397,12 +431,12 @@
 
          <!-- get in touch section -->
 
-         <div class=" bg-slate-300 p-10 mt-10 bg-[url('images/get-bg.png')] bg-cover bg-center" >
+         <div class=" p-10 mt-10 bg-[url('images/get-bg.png')] bg-cover bg-center" >
 
 
-          <div class="px-3 md:w-[80%] mx-auto bg-[#EFEBE3]  rounded-xl md:p-10 text-center md:text-left">
+          <div class="px-3 md:w-[80%] mx-auto bg-[#EFEBE3]  rounded-xl p-5 md:p-10 text-center md:text-left">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
-              <div>
+              <div class="mx-auto md:ml-0">
                 <img src="images/vegetable-busket.png" alt="">
               </div>
               <div class="space-y-6 ">
@@ -411,7 +445,7 @@
 
                 <input class="bg-white p-3 w-[100%] rounded-lg border-none" placeholder="Enter email..." type="email">
                 <button>
-                  <a href="#" class="px-6 py-2 rounded-lg text-lg bg-[#179800] text-white">Subscribe</a>
+                  <a href="#" class="px-6 py-2 rounded-lg text-lg bg-[#179800] text-white hover:bg-white hover:text-[#111111] tran duration-300 hover:border-2 hover:border-[#179800]">Subscribe</a>
                 </button>
                 
               </div>
