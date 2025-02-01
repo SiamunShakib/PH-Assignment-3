@@ -54,7 +54,12 @@
               </div>
 
               <!-- main menu -->
-              <img class="w-30" src="images/logo-header.png" alt="">
+               <a href="#">
+                <img class="w-30 hidden md:inline" src="images/logo-header.png" alt="">
+               </a>
+               <a href="#">
+                <img class="w-10 md:hidden " src="images/mobile-logo.png" alt="">
+               </a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -123,7 +128,7 @@
         <!-- cards -->
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
             <!-- cards 1 -->
-            <div class=" p-12 text-center space-y-3 rounded-xl bg-[#EFEBE3]">
+            <div class="p-6 md:p-12 text-center space-y-3 rounded-xl bg-[#EFEBE3]">
               <!-- image -->
               <div class="avatar bg-white p-5 rounded-[50%]">
                 <div class="ring-primary ring-offset-base-100 w-24 rounded-full">
@@ -138,7 +143,7 @@
             </div>
 
             <!-- cards 2 -->
-            <div class=" p-12 text-center space-y-3 rounded-xl bg-[#EFEBE3]">
+            <div class="p-6 md:p-12 text-center space-y-3 rounded-xl bg-[#EFEBE3]">
                 <!-- image -->
                 <div class="avatar bg-white p-5 rounded-[50%]">
                   <div class="ring-primary ring-offset-base-100 w-24 rounded-full">
@@ -154,7 +159,7 @@
               </div>
 
             <!-- cards 3 -->
-            <div class=" p-12 text-center space-y-3 rounded-xl bg-[#EFEBE3] md:col-span-2 lg:col-span-1">
+            <div class="p-6 md:p-12 text-center space-y-3 rounded-xl bg-[#EFEBE3] md:col-span-2 lg:col-span-1">
                 <!-- image -->
                 <div class="avatar bg-white p-5 rounded-[50%]">
                   <div class="ring-primary ring-offset-base-100 w-24 rounded-full">
@@ -194,7 +199,7 @@
 
                    
                    <!-- big card -->
-                <div class="bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF] rounded-lg row-span-3 col-span-4 md:col-span-2 lg:col-span-3 h-60 md:h-auto">
+                <div class="bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF] rounded-lg row-span-3 col-span-4 md:col-span-2 lg:col-span-3 h-75 md:h-auto">
                  
                   <div class="h-[100%] px-8 pt-4 bg-[url('images/vegetable-offer.png')] bg-no-repeat bg-right-bottom bg-[length:60%_auto]">
                     <h2 class="text-white text-4xl font-bold">30% off</h2>
@@ -381,14 +386,14 @@
 
             <!-- banner -->
              <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 ">
-                <div class="col-span-1 lg:col-span-3 bg-[#115414] flex p-5 items-center rounded-xl justify-between">
+                <div class="col-span-1 lg:col-span-3 bg-[#115414] flex p-3 md:p-5 items-center rounded-xl justify-between">
                     <div class="space-y-8 text-white">
-                      <img src="images/dawat-logo.png" alt="">
+                      <img class="w-[50%] md:w-[100%]" src="images/dawat-logo.png" alt="">
                       
-                      <a href="#" class="px-3 sm:px-6 py-2 rounded-lg text-xs md:text-lg bg-[#63B76D]">Cook Exotic Dishes</a>
+                      <a href="#" class="px-2 sm:px-6 py-2 rounded-lg text-xs md:text-lg bg-[#63B76D]">Cook Exotic Dishes</a>
                       <h2 class="text-2xl md:text-3xl mt-5">UP to <span class="font-bold">20% OFF</span></h2>
                     </div>
-                    <img class="h-full max-h-40 md:max-h-60" src="images/dawat-mock-up.png" alt="">
+                    <img class="h-[70%] sm:h-full max-h-40 md:max-h-60" src="images/dawat-mock-up.png" alt="">
                 </div>
               
 
@@ -462,8 +467,8 @@
      
       <section class="footer  pb-24 bg-[#179800] relative">
 
-        <footer class="mx-auto md:max-w-[90%] 2xl:max-w-[1500px] footer  text-white p-10 grid grid-cols-1 md:grid-cols-4 justify-between">
-          <div class=" col-span-1 md:col-span-2">
+        <footer class="mx-auto md:max-w-[90%] 2xl:max-w-[1500px] footer  text-white px-3 py-10 grid grid-cols-1 md:grid-cols-4 justify-between">
+          <div class=" col-span-1 md:col-span-2 mb-10 md:mb-1">
             <img src="images/logo-footer.png" alt="">
             <p class="mr-[30%]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
           </div>
@@ -473,7 +478,7 @@
             <a class="link link-hover">Contact US</a>
           </div>
           <div class="pt-12">
-            <h6 class="footer-title">Follow Us</h6>
+            <h6 class="">Follow Us</h6>
             <div class="grid grid-flow-col gap-6 text-xl">
               <a>
                 <i class="fa-brands fa-facebook-f"></i>
